@@ -1,0 +1,1242 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title data-i18n="meta.homeTitle">
+      Tumbo Air Cargo | Fast Air Cargo from China &amp; Dubai to Tanzania
+    </title>
+    <meta
+      name="description"
+      data-i18n-content="meta.homeDescription"
+      content="Tumbo Air Cargo helps individuals and businesses ship goods from China and Dubai to Dar es Salaam through air freight, cargo consolidation, and shipment handling."
+    />
+    <!-- Google Fonts -->
+    <!-- Tailwind CSS v3 CDN -->
+    <link href="assets/css/site-fonts.css" rel="stylesheet" />
+    <link href="assets/css/site.css" rel="stylesheet" />
+    <script src="assets/js/tailwindcss-plugins.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                blue: "#1266E8",
+                dark: "#0B1F3A",
+                accentOrange: "#F28C28",
+                lightBg: "#F8FAFC",
+                skyBorder: "#E2E8F0",
+              },
+            },
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Custom Layout Styles -->
+    <style data-purpose="typography">
+      body {
+        font-family: "Manrope", sans-serif;
+        color: #334155;
+        background-color: #ffffff;
+        overflow-x: hidden;
+      }
+    </style>
+    <style data-purpose="decorations">
+      .accent-bar {
+        display: inline-block;
+        width: 20px;
+        height: 3px;
+        background-color: #f28c28;
+        vertical-align: middle;
+        margin-right: 8px;
+        border-radius: 2px;
+      }
+      .accent-bar-white {
+        display: inline-block;
+        width: 20px;
+        height: 3px;
+        background-color: #f28c28;
+        vertical-align: middle;
+        margin-right: 8px;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white text-slate-800 antialiased selection:bg-blue-600 selection:text-white"
+  >
+    <!-- BEGIN: NavigationHeader -->
+    <header class="w-full bg-white border-b border-slate-100 sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Brand Logo -->
+        <a
+          aria-label="Tumbo Air Cargo Homepage"
+          data-i18n-aria="nav.home"
+          class="flex items-center"
+          href="#home"
+        >
+          <img
+            alt="Tumbo Air Cargo"
+            class="h-12 w-auto max-w-[180px] object-contain"
+            src="assets/images/tumbo-air-cargo-logo.png"
+          />
+        </a>
+        <!-- Desktop Navigation Links -->
+        <nav
+          class="hidden xl:flex items-center space-x-6 text-sm font-semibold text-slate-700"
+        >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.home"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.about"
+            href="#about"
+            >About Us</a
+          >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.services"
+            href="#services"
+            >Our Services</a
+          >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.process"
+            href="#how-it-works"
+            >How It Works</a
+          >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.guide"
+            href="#shipping-guide"
+            >Shipping Guide</a
+          >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.tracking"
+            href="pages/tracking.html"
+            >Track Shipment</a
+          >
+          <a
+            class="hover:text-blue-600 transition-colors"
+            data-i18n="nav.contact"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <!-- Action Button & Hamburger -->
+        <div class="flex items-center gap-4">
+          <a
+            class="hidden sm:inline-flex items-center gap-2 bg-[#1266E8] hover:bg-blue-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-sm transition-all"
+            href="pages/quote.html"
+          >
+            <svg class="w-4 h-4 fill-current opacity-80" viewbox="0 0 16 16">
+              <circle cx="3" cy="3" r="1.5"></circle>
+              <circle cx="8" cy="3" r="1.5"></circle>
+              <circle cx="13" cy="3" r="1.5"></circle>
+              <circle cx="3" cy="8" r="1.5"></circle>
+              <circle cx="8" cy="8" r="1.5"></circle>
+              <circle cx="13" cy="8" r="1.5"></circle>
+              <circle cx="3" cy="13" r="1.5"></circle>
+              <circle cx="8" cy="13" r="1.5"></circle>
+              <circle cx="13" cy="13" r="1.5"></circle>
+            </svg>
+            <span data-i18n="nav.quote">Get a Quote</span>
+            <svg
+              class="w-4 h-4 ml-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.2"
+              ></path>
+            </svg>
+          </a>
+          <!-- Mobile Menu Trigger -->
+          <button
+            aria-label="Open navigation menu"
+            class="p-2 text-slate-700 hover:text-blue-600 rounded-md focus:outline-none xl:hidden"
+            type="button"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END: NavigationHeader -->
+    <!-- BEGIN: HeroSection -->
+    <section
+      class="relative pt-10 pb-16 lg:pt-14 lg:pb-28 bg-gradient-to-b from-sky-50/50 to-white overflow-hidden"
+      id="home"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Hero Copy -->
+          <div class="lg:col-span-6 space-y-6">
+            <h1
+              class="text-4xl sm:text-5xl lg:text-[58px] font-extrabold tracking-tight leading-[1.1] text-[#0B1F3A]"
+            >
+              <span data-i18n="hero.titleFirst">Your Cargo.</span><br />
+              <span class="text-[#1266E8]" data-i18n="hero.titleSecond"
+                >Our Priority.</span
+              >
+            </h1>
+            <p
+              class="text-base sm:text-lg text-slate-600 font-normal max-w-lg leading-relaxed"
+            >
+              <span data-i18n="hero.description"
+                >Ship your goods from China and Dubai to Dar es Salaam with
+                reliable air freight, cargo consolidation, and hassle-free cargo
+                handling. We make international importing easier for businesses
+                and individuals across Tanzania.</span
+              >
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                class="inline-flex items-center gap-2 bg-[#1266E8] hover:bg-blue-700 text-white font-semibold text-sm px-6 py-3.5 rounded-lg shadow-md hover:shadow-lg transition"
+                data-whatsapp-message="whatsapp.quoteRequest"
+                href="https://wa.me/255759975597"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span data-i18n="hero.quote">Get a Quote on WhatsApp</span>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="inline-flex items-center justify-center border-2 border-blue-200 bg-white hover:border-blue-400 text-[#1266E8] font-semibold text-sm px-6 py-3 rounded-lg transition shadow-sm"
+                href="pages/tracking.html"
+              >
+                <span data-i18n="hero.track">Track Your Shipment</span>
+              </a>
+            </div>
+          </div>
+          <!-- Right Hero Visual Collage -->
+          <div class="lg:col-span-6 relative">
+            <div
+              class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-100 group"
+            >
+              <!-- Air cargo photography -->
+              <img
+                alt="Cargo aircraft prepared for international air freight"
+                class="w-full h-[380px] sm:h-[460px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                src="assets/images/service-cargo-aircraft.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: HeroSection -->
+    <!-- BEGIN: TrackingWidgetSection -->
+    <section
+      class="relative z-20 mx-auto -mt-10 max-w-7xl px-4 sm:px-6 lg:px-8"
+      id="tracking"
+    >
+      <div
+        class="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl lg:p-8"
+      >
+        <div class="mb-5">
+          <p
+            class="text-sm font-bold uppercase tracking-wider text-[#F28C28]"
+            data-i18n="tracking.title"
+          >
+            Track Your Shipment
+          </p>
+          <p
+            class="mt-1 text-sm text-slate-600"
+            data-i18n="tracking.description"
+          >
+            Stay updated on the movement of your cargo.
+          </p>
+        </div>
+        <form class="flex flex-col gap-3 sm:flex-row" data-tracking-form>
+          <label
+            class="sr-only"
+            for="home-tracking-number"
+            data-i18n="tracking.inputLabel"
+            >Tracking Number</label
+          >
+          <input
+            class="min-h-12 flex-1 rounded-lg border border-slate-300 px-4 text-slate-900 focus:border-[#1266E8] focus:outline-none focus:ring-2 focus:ring-blue-100"
+            data-i18n-placeholder="tracking.pagePlaceholder"
+            id="home-tracking-number"
+            name="tracking-number"
+            placeholder="Enter your tracking number"
+            required
+            type="text"
+          />
+          <button
+            class="min-h-12 rounded-lg bg-[#1266E8] px-7 font-semibold text-white hover:bg-[#0B1F3A]"
+            data-i18n="tracking.button"
+            type="submit"
+          >
+            Check Tracking Availability
+          </button>
+        </form>
+        <p
+          aria-live="polite"
+          class="mt-4 hidden"
+          data-tracking-status
+          tabindex="-1"
+        ></p>
+        <a
+          class="mt-4 inline-flex text-sm font-semibold text-[#1266E8] hover:underline"
+          data-i18n="tracking.more"
+          href="pages/tracking.html"
+          >Learn about shipment tracking</a
+        >
+      </div>
+    </section>
+    <!-- END: TrackingWidgetSection -->
+    <!-- BEGIN: AboutSection -->
+    <section class="bg-white py-20 lg:py-24" id="about">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8"
+      >
+        <div class="space-y-6 lg:col-span-6">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="about.eyebrow"
+          >
+            About Tumbo Air Cargo
+          </p>
+          <h2
+            class="text-3xl font-extrabold leading-tight text-[#0B1F3A] sm:text-4xl"
+            data-i18n="about.heading"
+          >
+            Connecting China &amp; Dubai to Tanzania.
+          </h2>
+          <p
+            class="max-w-2xl leading-relaxed text-slate-600"
+            data-i18n="about.description"
+          >
+            Tumbo Air Cargo is your international air freight partner for goods
+            moving from China and Dubai to Dar es Salaam. We simplify importing
+            through cargo consolidation and professional shipment handling for
+            traders, businesses, and individual shoppers.
+          </p>
+          <ul class="grid gap-3 sm:grid-cols-2">
+            <li class="rounded-lg bg-[#F5F8FC] p-4">
+              <strong
+                class="block text-[#0B1F3A]"
+                data-i18n="about.routeChinaTitle"
+                >China to Tanzania</strong
+              ><span
+                class="text-sm text-slate-600"
+                data-i18n="about.routeChinaDescription"
+                >Air cargo from suppliers in China to Dar es Salaam.</span
+              >
+            </li>
+            <li class="rounded-lg bg-[#F5F8FC] p-4">
+              <strong
+                class="block text-[#0B1F3A]"
+                data-i18n="about.routeDubaiTitle"
+                >Dubai to Tanzania</strong
+              ><span
+                class="text-sm text-slate-600"
+                data-i18n="about.routeDubaiDescription"
+                >Air cargo from Dubai to Dar es Salaam.</span
+              >
+            </li>
+            <li class="rounded-lg bg-[#F5F8FC] p-4">
+              <strong
+                class="block text-[#0B1F3A]"
+                data-i18n="about.consolidationTitle"
+                >Cargo consolidation</strong
+              ><span
+                class="text-sm text-slate-600"
+                data-i18n="about.consolidationDescription"
+                >Combine packages from multiple suppliers in one shipment.</span
+              >
+            </li>
+            <li class="rounded-lg bg-[#F5F8FC] p-4">
+              <strong
+                class="block text-[#0B1F3A]"
+                data-i18n="about.handlingTitle"
+                >Cargo handling</strong
+              ><span
+                class="text-sm text-slate-600"
+                data-i18n="about.handlingDescription"
+                >Get support with shipment processing and customs
+                coordination.</span
+              >
+            </li>
+          </ul>
+          <a
+            class="inline-flex items-center gap-2 rounded-lg bg-[#1266E8] px-6 py-3 font-semibold text-white hover:bg-[#0B1F3A]"
+            data-i18n="about.cta"
+            href="pages/about-us.html"
+            >Learn more about us</a
+          >
+        </div>
+        <div class="relative lg:col-span-6">
+          <img
+            alt="Air cargo aircraft for international freight"
+            class="h-[320px] w-full rounded-2xl object-cover shadow-xl sm:h-[440px]"
+            loading="lazy"
+            src="assets/images/about-cargo-aircraft.jpg"
+          />
+          <div
+            class="absolute bottom-4 left-4 right-4 rounded-xl bg-white/95 p-4 shadow-lg sm:bottom-6 sm:left-6 sm:right-6"
+          >
+            <p class="font-bold text-[#0B1F3A]" data-i18n="about.routeCaption">
+              Two international routes. One local destination.
+            </p>
+            <p class="mt-1 text-sm text-slate-600">
+              China / Dubai &rarr; Dar es Salaam, Tanzania
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: AboutSection -->
+    <!-- BEGIN: FreightSolutionsSection -->
+    <section class="bg-[#F5F8FC] py-20 lg:py-24" id="services">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="services.eyebrow"
+          >
+            Our Services
+          </p>
+          <h2
+            class="mt-2 text-3xl font-extrabold text-[#0B1F3A] sm:text-4xl"
+            data-i18n="services.heading"
+          >
+            Air cargo support for your imports.
+          </h2>
+          <p
+            class="mt-4 leading-relaxed text-slate-600"
+            data-i18n="services.intro"
+          >
+            Choose a route and service that fits your shipment. Contact our team
+            to confirm handling requirements and available delivery
+            arrangements.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              alt="Air cargo aircraft"
+              class="h-52 w-full object-cover"
+              loading="lazy"
+              src="assets/images/service-cargo-aircraft.jpg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-[#0B1F3A]"
+                data-i18n="service.china.title"
+              >
+                China Air Cargo
+              </h3>
+              <p
+                class="mt-3 text-sm leading-relaxed text-slate-600"
+                data-i18n="service.china.description"
+              >
+                Air freight from suppliers in China to Dar es Salaam.
+              </p>
+              <a
+                class="mt-5 inline-flex font-semibold text-[#1266E8] hover:underline"
+                data-i18n="services.explore"
+                href="pages/services.html#china-air-cargo"
+                >Explore More</a
+              >
+            </div>
+          </article>
+          <article
+            class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              alt="Cargo aircraft in flight"
+              class="h-52 w-full object-cover"
+              loading="lazy"
+              src="assets/images/about-cargo-aircraft.jpg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-[#0B1F3A]"
+                data-i18n="service.dubai.title"
+              >
+                Dubai Air Cargo
+              </h3>
+              <p
+                class="mt-3 text-sm leading-relaxed text-slate-600"
+                data-i18n="service.dubai.description"
+              >
+                Air cargo transportation from Dubai to Tanzania for a range of
+                merchandise, subject to acceptance requirements.
+              </p>
+              <a
+                class="mt-5 inline-flex font-semibold text-[#1266E8] hover:underline"
+                data-i18n="services.explore"
+                href="pages/services.html#dubai-air-cargo"
+                >Explore More</a
+              >
+            </div>
+          </article>
+          <article
+            class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+          >
+            <img
+              alt="Cargo packages prepared for shipment"
+              class="h-52 w-full object-cover"
+              loading="lazy"
+              src="assets/images/service-warehouse.jpg"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-[#0B1F3A]"
+                data-i18n="service.consolidation.title"
+              >
+                Cargo Consolidation
+              </h3>
+              <p
+                class="mt-3 text-sm leading-relaxed text-slate-600"
+                data-i18n="service.consolidation.description"
+              >
+                Combine eligible packages from multiple suppliers into one
+                shipment. Ask our team about receiving and consolidation
+                arrangements.
+              </p>
+              <a
+                class="mt-5 inline-flex font-semibold text-[#1266E8] hover:underline"
+                data-i18n="services.explore"
+                href="pages/services.html#cargo-consolidation"
+                >Explore More</a
+              >
+            </div>
+          </article>
+          <article
+            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <div
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#1266E8]"
+            >
+              <span
+                aria-hidden="true"
+                class="material-symbols-outlined text-3xl"
+                >fact_check</span
+              >
+            </div>
+            <h3
+              class="text-xl font-bold text-[#0B1F3A]"
+              data-i18n="service.customs.title"
+            >
+              Customs Clearance &amp; Cargo Handling
+            </h3>
+            <p
+              class="mt-3 text-sm leading-relaxed text-slate-600"
+              data-i18n="service.customs.description"
+            >
+              Get support coordinating cargo handling and relevant customs
+              clearance procedures.
+            </p>
+            <a
+              class="mt-5 inline-flex font-semibold text-[#1266E8] hover:underline"
+              data-i18n="services.explore"
+              href="pages/services.html#customs-handling"
+              >Explore More</a
+            >
+          </article>
+          <article
+            class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <div
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#1266E8]"
+            >
+              <span
+                aria-hidden="true"
+                class="material-symbols-outlined text-3xl"
+                >local_shipping</span
+              >
+            </div>
+            <h3
+              class="text-xl font-bold text-[#0B1F3A]"
+              data-i18n="service.delivery.title"
+            >
+              Door-to-Door &amp; Local Delivery
+            </h3>
+            <p
+              class="mt-3 text-sm leading-relaxed text-slate-600"
+              data-i18n="service.delivery.description"
+            >
+              Ask about collection in Kariakoo or local delivery arrangements
+              where available.
+            </p>
+            <a
+              class="mt-5 inline-flex font-semibold text-[#1266E8] hover:underline"
+              data-i18n="services.explore"
+              href="pages/services.html#local-delivery"
+              >Explore More</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END: FreightSolutionsSection -->
+    <section class="bg-white py-20 lg:py-24" id="how-it-works">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-2xl">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="process.eyebrow"
+          >
+            Simple shipping process
+          </p>
+          <h2
+            class="mt-2 text-3xl font-extrabold text-[#0B1F3A] sm:text-4xl"
+            data-i18n="process.heading"
+          >
+            How to Ship with Tumbo Air Cargo
+          </h2>
+        </div>
+        <ol class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="text-sm font-extrabold text-[#F28C28]">01</span>
+            <h3
+              class="mt-3 font-bold text-[#0B1F3A]"
+              data-i18n="process.step1.title"
+            >
+              Get Your Warehouse Address
+            </h3>
+            <p
+              class="mt-2 text-sm leading-relaxed text-slate-600"
+              data-i18n="process.step1.body"
+            >
+              Contact us for the official China or Dubai warehouse address and
+              your unique customer shipping mark.
+            </p>
+          </li>
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="text-sm font-extrabold text-[#F28C28]">02</span>
+            <h3
+              class="mt-3 font-bold text-[#0B1F3A]"
+              data-i18n="process.step2.title"
+            >
+              Send Goods to Our Warehouse
+            </h3>
+            <p
+              class="mt-2 text-sm leading-relaxed text-slate-600"
+              data-i18n="process.step2.body"
+            >
+              Buy from your preferred supplier and ask them to deliver eligible
+              goods using your assigned shipping mark.
+            </p>
+          </li>
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="text-sm font-extrabold text-[#F28C28]">03</span>
+            <h3
+              class="mt-3 font-bold text-[#0B1F3A]"
+              data-i18n="process.step3.title"
+            >
+              Cargo Transportation &amp; Handling
+            </h3>
+            <p
+              class="mt-2 text-sm leading-relaxed text-slate-600"
+              data-i18n="process.step3.body"
+            >
+              We coordinate receipt, processing, air transportation, and
+              relevant customs clearance procedures.
+            </p>
+          </li>
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="text-sm font-extrabold text-[#F28C28]">04</span>
+            <h3
+              class="mt-3 font-bold text-[#0B1F3A]"
+              data-i18n="process.step4.title"
+            >
+              Collect Your Cargo in Dar es Salaam
+            </h3>
+            <p
+              class="mt-2 text-sm leading-relaxed text-slate-600"
+              data-i18n="process.step4.body"
+            >
+              Collect from our Kariakoo office or ask whether local delivery is
+              available for your shipment.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="bg-[#F5F8FC] py-20 lg:py-24" id="calculator">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8"
+      >
+        <div class="lg:col-span-5">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="calculator.eyebrow"
+          >
+            Shipping quote request
+          </p>
+          <h2
+            class="mt-2 text-3xl font-extrabold text-[#0B1F3A] sm:text-4xl"
+            data-i18n="calculator.heading"
+          >
+            Request a Shipping Quote
+          </h2>
+          <p
+            class="mt-4 leading-relaxed text-slate-600"
+            data-i18n="calculator.description"
+          >
+            Get an estimate request ready using your cargo origin, category, and
+            weight. Final rates depend on the shipment details and handling
+            requirements.
+          </p>
+          <p
+            class="mt-4 rounded-lg border-l-4 border-[#F28C28] bg-white p-4 text-sm leading-relaxed text-slate-700"
+            data-i18n="calculator.notice"
+          >
+            Shipping rates are not configured online. No price will be
+            calculated; send your details for an official quotation.
+          </p>
+        </div>
+        <form
+          class="grid gap-5 rounded-2xl bg-white p-6 shadow-sm sm:grid-cols-2 lg:col-span-7"
+          id="quote-calculator"
+        >
+          <div>
+            <label
+              class="mb-2 block text-sm font-semibold text-[#0B1F3A]"
+              data-i18n="calculator.originLabel"
+              for="calculator-origin"
+              >Shipping Origin</label
+            ><select
+              class="w-full rounded-lg border border-slate-300 px-3 py-3"
+              id="calculator-origin"
+              name="origin"
+              required
+            >
+              <option data-i18n="form.selectOrigin" disabled selected value="">
+                Select origin
+              </option>
+              <option data-i18n="option.china" value="China">China</option>
+              <option data-i18n="option.dubai" value="Dubai">Dubai</option>
+            </select>
+          </div>
+          <div>
+            <label
+              class="mb-2 block text-sm font-semibold text-[#0B1F3A]"
+              data-i18n="calculator.categoryLabel"
+              for="calculator-category"
+              >Cargo Category</label
+            ><select
+              class="w-full rounded-lg border border-slate-300 px-3 py-3"
+              id="calculator-category"
+              name="category"
+              required
+            >
+              <option
+                data-i18n="form.selectCategory"
+                disabled
+                selected
+                value=""
+              >
+                Select cargo category
+              </option>
+              <option data-i18n="option.normal" value="Normal Goods">
+                Normal Goods
+              </option>
+              <option data-i18n="option.electronics" value="Electronics">
+                Electronics
+              </option>
+              <option data-i18n="option.batteries" value="Lithium Batteries">
+                Lithium Batteries
+              </option>
+              <option data-i18n="option.liquids" value="Liquids">
+                Liquids
+              </option>
+              <option data-i18n="option.cosmetics" value="Cosmetics">
+                Cosmetics
+              </option>
+              <option data-i18n="option.special" value="Other Special Goods">
+                Other Special Goods
+              </option>
+            </select>
+          </div>
+          <div>
+            <label
+              class="mb-2 block text-sm font-semibold text-[#0B1F3A]"
+              data-i18n="calculator.weightLabel"
+              for="calculator-weight"
+              >Cargo Weight (KG)</label
+            ><input
+              class="w-full rounded-lg border border-slate-300 px-3 py-3"
+              data-i18n-placeholder="calculator.weightPlaceholder"
+              id="calculator-weight"
+              min="0.1"
+              name="weight"
+              placeholder="e.g. 25"
+              required
+              step="0.1"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              class="mb-2 block text-sm font-semibold text-[#0B1F3A]"
+              data-i18n="calculator.descriptionLabel"
+              for="calculator-description"
+              >Product Description (Optional)</label
+            ><input
+              class="w-full rounded-lg border border-slate-300 px-3 py-3"
+              data-i18n-placeholder="calculator.descriptionPlaceholder"
+              id="calculator-description"
+              name="description"
+              placeholder="Describe your goods"
+              type="text"
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              class="mb-2 block text-sm font-semibold text-[#0B1F3A]"
+              data-i18n="calculator.detailsLabel"
+              for="calculator-details"
+              >Additional Shipping Information (Optional)</label
+            ><textarea
+              class="w-full rounded-lg border border-slate-300 px-3 py-3"
+              id="calculator-details"
+              name="details"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="sm:col-span-2">
+            <button
+              class="min-h-12 w-full rounded-lg bg-[#1266E8] px-5 font-semibold text-white hover:bg-[#0B1F3A]"
+              data-i18n="calculator.calculate"
+              type="submit"
+            >
+              Request a Quote on WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="bg-white py-20 lg:py-24" id="warehouses">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="warehouse.eyebrow"
+          >
+            International support
+          </p>
+          <h2
+            class="mt-2 text-3xl font-extrabold text-[#0B1F3A] sm:text-4xl"
+            data-i18n="warehouse.heading"
+          >
+            Our International Warehouses
+          </h2>
+          <p class="mt-4 max-w-3xl text-slate-600" data-i18n="warehouse.intro">
+            Official warehouse addresses and customer shipping marks are
+            provided by our team. Contact us before sending goods.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#0B1F3A]"
+              data-i18n="warehouse.china.title"
+            >
+              China Warehouse
+            </h3>
+            <p
+              class="mt-2 text-sm text-slate-600"
+              data-i18n="warehouse.countryChina"
+            >
+              Country: China
+            </p>
+            <p
+              class="mt-4 leading-relaxed text-slate-700"
+              data-i18n="warehouse.addressUnavailable"
+            >
+              Contact our team to receive the official warehouse address and
+              your unique shipping mark.
+            </p>
+            <a
+              class="mt-4 inline-flex rounded-lg border border-[#1266E8] px-4 py-2 text-sm font-semibold text-[#1266E8] hover:bg-blue-50"
+              data-i18n="warehouse.requestAddress"
+              data-whatsapp-message="whatsapp.requestAddressChina"
+              href="https://wa.me/255759975597"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Request Address on WhatsApp</a
+            >
+          </article>
+          <article class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#0B1F3A]"
+              data-i18n="warehouse.dubai.title"
+            >
+              Dubai Warehouse
+            </h3>
+            <p
+              class="mt-2 text-sm text-slate-600"
+              data-i18n="warehouse.countryDubai"
+            >
+              Country: United Arab Emirates
+            </p>
+            <p
+              class="mt-4 leading-relaxed text-slate-700"
+              data-i18n="warehouse.addressUnavailable"
+            >
+              Contact our team to receive the official warehouse address and
+              your unique shipping mark.
+            </p>
+            <a
+              class="mt-4 inline-flex rounded-lg border border-[#1266E8] px-4 py-2 text-sm font-semibold text-[#1266E8] hover:bg-blue-50"
+              data-i18n="warehouse.requestAddress"
+              data-whatsapp-message="whatsapp.requestAddressDubai"
+              href="https://wa.me/255759975597"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Request Address on WhatsApp</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#F5F8FC] py-20 lg:py-24" id="shipping-guide">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="guide.eyebrow"
+          >
+            Before you ship
+          </p>
+          <h2
+            class="mt-2 text-3xl font-extrabold text-[#0B1F3A] sm:text-4xl"
+            data-i18n="guide.heading"
+          >
+            Know What You Can Ship
+          </h2>
+          <p class="mt-4 max-w-3xl text-slate-600" data-i18n="guide.intro">
+            Cargo acceptance depends on the item, route, airline rules, and
+            required documentation. Ask us to confirm before purchasing or
+            dispatching goods.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3
+              class="text-xl font-bold text-[#0B1F3A]"
+              data-i18n="guide.standard.title"
+            >
+              Standard Cargo
+            </h3>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-slate-700">
+              <li data-i18n="guide.standard.item1">General merchandise</li>
+              <li data-i18n="guide.standard.item2">
+                Clothing and fashion products
+              </li>
+              <li data-i18n="guide.standard.item3">Shoes and accessories</li>
+              <li data-i18n="guide.standard.item4">Household products</li>
+              <li data-i18n="guide.standard.item5">
+                Other approved general goods
+              </li>
+            </ul>
+          </article>
+          <article
+            class="rounded-2xl border border-orange-200 bg-orange-50 p-6"
+          >
+            <h3
+              class="text-xl font-bold text-[#0B1F3A]"
+              data-i18n="guide.special.title"
+            >
+              Special Cargo &mdash; Check Before Shipping
+            </h3>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-slate-700">
+              <li data-i18n="guide.special.item1">
+                Lithium batteries and electronics containing batteries
+              </li>
+              <li data-i18n="guide.special.item2">Liquids and powders</li>
+              <li data-i18n="guide.special.item3">Cosmetics and perfumes</li>
+              <li data-i18n="guide.special.item4">
+                Other restricted or regulated goods
+              </li>
+            </ul>
+            <p
+              class="mt-4 text-sm leading-relaxed text-slate-700"
+              data-i18n="guide.special.note"
+            >
+              Special cargo may need additional handling, approval, or
+              documentation. These items are not automatically accepted.
+            </p>
+            <a
+              class="mt-5 inline-flex rounded-lg bg-[#1266E8] px-5 py-3 font-semibold text-white hover:bg-[#0B1F3A]"
+              data-i18n="guide.special.cta"
+              data-whatsapp-message="whatsapp.specialCargo"
+              href="https://wa.me/255759975597"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Contact Us Before Shipping</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-20 lg:py-24" id="contact">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8"
+      >
+        <div class="lg:col-span-5">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.18em] text-[#F28C28]"
+            data-i18n="contact.eyebrow"
+          >
+            Talk to our team
+          </p>
+          <h2
+            class="mt-2 text-3xl font-extrabold text-[#0B1F3A] sm:text-4xl"
+            data-i18n="contact.heading"
+          >
+            Contact Tumbo Air Cargo
+          </h2>
+          <p
+            class="mt-4 leading-relaxed text-slate-600"
+            data-i18n="contact.location"
+          >
+            Kariakoo, Dar es Salaam, Tanzania. Office and pickup hub:
+            intersection of Kariakoo Street and Chui Street, near Makonde
+            Mosque.
+          </p>
+          <div class="mt-6 flex flex-col gap-3">
+            <a
+              class="inline-flex items-center gap-2 font-semibold text-[#1266E8] hover:underline"
+              href="tel:+255759975597"
+              ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.33 1.9.63 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.3 1.85.51 2.81.63A2 2 0 0 1 22 16.92z"/></svg>+255 759 975 597</a
+            ><a
+              class="inline-flex items-center gap-2 font-semibold text-[#1266E8] hover:underline"
+              href="tel:+255756044031"
+              ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.33 1.9.63 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.3 1.85.51 2.81.63A2 2 0 0 1 22 16.92z"/></svg>+255 756 044 031</a
+            ><a
+              class="inline-flex items-center gap-2 font-semibold text-[#1266E8] hover:underline"
+              href="https://www.instagram.com/tumbo_air_cargo_/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram: @tumbo_air_cargo_</a
+            ><a
+              class="inline-flex items-center gap-2 font-semibold text-[#1266E8] hover:underline"
+              href="https://www.facebook.com/search/top?q=Tumbo%20Air%20Cargo"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M13.7 20v-7.1h2.4l.36-2.77H13.7V8.32c0-.8.22-1.35 1.38-1.35h1.48V4.47A20 20 0 0 0 14.4 4c-2.14 0-3.61 1.31-3.61 3.72v2.4H8.35v2.77h2.44V20h2.91z" fill="white"/></svg>Facebook: Tumbo Air Cargo</a
+            ><a
+              class="inline-flex items-center gap-2 font-semibold text-[#1266E8] hover:underline"
+              href="https://www.threads.net/search?q=Tumbo%20Air%20Cargo"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M16 8.5c-1-1-2.3-1.5-4-1.5-2.8 0-5 1.8-5 4.5s2.2 5.5 5.5 5.5c2.8 0 4.5-1.7 4.5-4 0-2.5-2-4-4-4-1.8 0-3 1.1-3 2.5s1.1 2.5 2.5 2.5c1.5 0 2.5-.9 2.5-2.5"/></svg>Threads: Tumbo Air Cargo</a
+            >
+          </div>
+          <a
+            class="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#1266E8] px-6 py-3 font-semibold text-white hover:bg-[#0B1F3A]"
+            href="pages/contact-us.html"
+            data-i18n="contact.formCta"
+            ><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Send an Inquiry</a
+          >
+        </div>
+        <div
+          class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm lg:col-span-7"
+        >
+          <iframe
+            class="h-[360px] w-full border-0 sm:h-[440px]"
+            data-i18n-title="contact.mapTitle"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Intersection+of+Kariakoo+Street+and+Chui+Street+near+Makonde+Mosque,+Kariakoo,+Dar+es+Salaam,+Tanzania&amp;output=embed"
+            title="Map to Tumbo Air Cargo's Kariakoo pickup hub"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- BEGIN: Footer -->
+    <footer class="bg-[#0B1F3A] py-12 text-blue-100">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8"
+      >
+        <div>
+          <img
+            alt="Tumbo Air Cargo"
+            class="mb-4 h-12 w-auto max-w-[190px] object-contain"
+            src="assets/images/tumbo-air-cargo-logo.png"
+          />
+          <p
+            class="max-w-sm text-sm leading-relaxed text-blue-100"
+            data-i18n="footer.description"
+          >
+            Tumbo Air Cargo provides air freight from China and Dubai to
+            Tanzania, helping individuals and businesses transport goods with
+            convenience and confidence.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-bold text-white" data-i18n="footer.quickLinks">
+            Quick Links
+          </h2>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                data-i18n="nav.about"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                data-i18n="nav.services"
+                href="#services"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                data-i18n="nav.process"
+                href="#how-it-works"
+                >How It Works</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                data-i18n="nav.guide"
+                href="#shipping-guide"
+                >Shipping Guide</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-bold text-white" data-i18n="footer.routes">
+            Shipping Routes
+          </h2>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li data-i18n="footer.routeChina">China to Dar es Salaam</li>
+            <li data-i18n="footer.routeDubai">Dubai to Dar es Salaam</li>
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                data-i18n="nav.tracking"
+                href="pages/tracking.html"
+                >Track Shipment</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                data-i18n="nav.quote"
+                href="pages/quote.html"
+                >Get a Quote</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-bold text-white" data-i18n="footer.contact">
+            Contact
+          </h2>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>
+              <a
+                class="inline-flex items-center gap-2 hover:text-white hover:underline"
+                href="tel:+255759975597"
+                ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.33 1.9.63 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.3 1.85.51 2.81.63A2 2 0 0 1 22 16.92z"/></svg>+255 759 975 597</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-flex items-center gap-2 hover:text-white hover:underline"
+                href="tel:+255756044031"
+                ><svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.33 1.9.63 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.3 1.85.51 2.81.63A2 2 0 0 1 22 16.92z"/></svg>+255 756 044 031</a
+              >
+            </li>
+            <li data-i18n="contact.location">
+              Kariakoo, Dar es Salaam, Tanzania.
+            </li>
+            <li>
+              <a
+                class="hover:text-white hover:underline"
+                href="https://www.instagram.com/tumbo_air_cargo_/"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><svg class="mr-1 inline h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a
+              >
+              &bull;
+              <a
+                class="hover:text-white hover:underline"
+                href="https://www.facebook.com/search/top?q=Tumbo%20Air%20Cargo"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><svg class="mr-1 inline h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M13.7 20v-7.1h2.4l.36-2.77H13.7V8.32c0-.8.22-1.35 1.38-1.35h1.48V4.47A20 20 0 0 0 14.4 4c-2.14 0-3.61 1.31-3.61 3.72v2.4H8.35v2.77h2.44V20h2.91z" fill="white"/></svg>Facebook</a
+              >
+              &bull;
+              <a
+                class="hover:text-white hover:underline"
+                href="https://www.threads.net/search?q=Tumbo%20Air%20Cargo"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><svg class="mr-1 inline h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M16 8.5c-1-1-2.3-1.5-4-1.5-2.8 0-5 1.8-5 4.5s2.2 5.5 5.5 5.5c2.8 0 4.5-1.7 4.5-4 0-2.5-2-4-4-4-1.8 0-3 1.1-3 2.5s1.1 2.5 2.5 2.5c1.5 0 2.5-.9 2.5-2.5"/></svg>Threads</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mx-auto mt-10 max-w-7xl border-t border-white/15 px-4 pt-6 text-sm text-blue-100 sm:px-6 lg:px-8"
+      >
+        <p>&copy; <span data-current-year></span> Tumbo Air Cargo.</p>
+      </div>
+    </footer>
+    <!-- END: Footer -->
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
